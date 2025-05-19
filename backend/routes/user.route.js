@@ -9,6 +9,7 @@ import {
   registerUser,
   updateUserProfile,
 } from "../controllers/user.controller.js";
+import { admin, protect } from "../middlewares/auth.middle.js";
 
 const router = express.Router();
 
